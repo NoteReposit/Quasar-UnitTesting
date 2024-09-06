@@ -1,5 +1,6 @@
 import IndexPage from 'src/pages/IndexPage.vue'
 import { shallowMount } from '@vue/test-utils'
+import { render } from 'vue';
 
 describe('IndexPage', () => {
     it('should render correct contents', () => {

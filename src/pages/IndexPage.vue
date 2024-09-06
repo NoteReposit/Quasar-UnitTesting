@@ -11,16 +11,16 @@
     <h1>{{ title }}</h1>
     <form class="center">
       <label>Student ID:</label><br>
-      <input type="text" id="stdID" v-model="stdID" /><br>
+      <input type="text" id="stdID" v-model="stdID"><br>
 
       <label>Nick name:</label><br>
-      <input type="text" id="nickName" v-model="nickName" /><br>
+      <input type="text" id="nickName" v-model="nickName" ><br>
 
       <label>First name:</label><br>
-      <input type="text" id="firstName" v-model="firstName" /><br>
+      <input type="text" id="firstName" v-model="firstName"><br>
 
       <label>Last name:</label><br>
-      <input type="text" id="lastName" v-model="lastName" /><br><br>
+      <input type="text" id="lastName" v-model="lastName"><br><br>
       <button @click="submitForm()" class="submitForm">Submit</button>
     </form>
   </div>
@@ -32,10 +32,10 @@ export default {
   data() {
     return {
       title: 'Vue is awesome.',
-      stdID: '',
-      nickName: '',
-      firstName: '',
-      lastName: '',
+      stdID: '6604101373',
+      nickName: 'Note',
+      firstName: 'Yotsakon',
+      lastName: 'Mukda',
     }
   },
   methods: {
