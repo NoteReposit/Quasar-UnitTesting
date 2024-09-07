@@ -15,7 +15,7 @@ describe('IndexPage', () => {
         const wrapper = shallowMount(IndexPage, {
             data() {
                 return {
-                    title: 'I love Vue.'
+                    title: 'I love Vue.',
                 }
             }
         })
@@ -29,11 +29,33 @@ test('should show the form element on the user output', () => {
     expect(wrapper.find('form').exists()).toBe(true)
 })
 
+//Check if the form in the template has an input field.
 test('should contain input fields in template', () => {
     const wrapper = shallowMount(IndexPage)
     expect(wrapper.find('form > input').exists()).toBe(true)
 })
 
+test('should have input fields in template for collect >> Student ID', () => {
+    const wrapper = shallowMount(IndexPage)
+    expect(wrapper.find('#stdID').exists()).toBe(true)
+})
+
+test('should have input fields in template for collect >> Nick name', () => {
+    const wrapper = shallowMount(IndexPage)
+    expect(wrapper.find('#nickName').exists()).toBe(true)
+})
+
+test('should have input fields in template for collect >> First name', () => {
+    const wrapper = shallowMount(IndexPage)
+    expect(wrapper.find('#firstName').exists()).toBe(true)
+})
+
+test('should have input fields in template for collect >> Last name', () => {
+    const wrapper = shallowMount(IndexPage)
+    expect(wrapper.find('#lastName').exists()).toBe(true)
+})
+
+//Check if the template has a submit button.
 test('should have button', () => {
     const wrapper = shallowMount(IndexPage)
     expect(wrapper.find('button').exists()).toBe(true)
